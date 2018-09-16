@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
+
 namespace Filters.Forms
 {
     public partial class MainPage : ContentPage
