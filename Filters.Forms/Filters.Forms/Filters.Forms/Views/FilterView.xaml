@@ -6,7 +6,23 @@
     <ContentPage.Content>
         <StackLayout>
             <skia:SKCanvasView x:Name="canvasView"
-                           VerticalOptions="FillAndExpand"/>
+                           VerticalOptions="FillAndExpand"
+                           PaintSurface="canvasView_PaintSurface"/>
+            <Slider x:Name="zSlider" 
+                Minimum="-10"
+                Maximum="10"
+                Margin="10, 0"
+                ValueChanged="OnSliderValueChanged" />
+            <Slider x:Name="surfaceScaleSlider" 
+                Minimum="-1"
+                Maximum="1"
+                Margin="10, 0"
+                ValueChanged="OnSliderValueChanged" />
+            <Slider x:Name="lightConstantSlider" 
+                Minimum="-1"
+                Maximum="1"
+                Margin="10, 0"
+                ValueChanged="OnSliderValueChanged" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
