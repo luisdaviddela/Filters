@@ -14,7 +14,9 @@ namespace Filters.Forms
 	public partial class FilterView : ContentPage
 	{
         const string TEXT = "Blur My Text";
-        
+        //SKBitmap bitmap = BitmapExtensions.LoadBitmapResource(
+        //                    typeof(FilterView),
+        //                    "SkiaSharpFormsDemos.Media.SeatedMonkey.jpg");
         public FilterView ()
 		{
 			InitializeComponent ();
