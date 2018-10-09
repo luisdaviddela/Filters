@@ -11,7 +11,7 @@ namespace Filters.Forms
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new FilterView());
         }
 
         protected override void OnStart()
