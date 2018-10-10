@@ -3,6 +3,6 @@ namespace Filters.Forms
 {
     public interface IFilterImage
     {
-        byte[] Sepia(Stream image);
+        byte[] Sepia(byte[] image);
     }
 }
