@@ -4,7 +4,9 @@
              x:Class="Filters.Forms.SepiaView">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Sepia"/>
+            <Label Text="Sepia" HorizontalOptions="Center" 
+                   FontSize="Large"
+                   FontAttributes="Bold"/>
             <Button Text="Get Image from gallery"
                     Clicked="Button_Clicked"/>
             <Image x:Name="ImageControl"/>
