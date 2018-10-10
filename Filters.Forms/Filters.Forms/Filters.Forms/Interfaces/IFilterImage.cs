@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using Xamarin.Forms;
+﻿using System.IO;
 namespace Filters.Forms
 {
     public interface IFilterImage

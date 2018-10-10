@@ -6,8 +6,10 @@ using System.Text;
 using CoreGraphics;
 using CoreImage;
 using Foundation;
+using Filters.Forms.iOS;
 using UIKit;
-
+using Xamarin.Forms;
+[assembly: Dependency(typeof(ImageiOS))]
 namespace Filters.Forms.iOS
 {
     public class ImageiOS : IFilterImage
