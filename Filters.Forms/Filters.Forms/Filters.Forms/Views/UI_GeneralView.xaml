@@ -6,8 +6,8 @@
         <StackLayout>
             <Image 
                 x:Name="ImageViewFilter"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                VerticalOptions="FillAndExpand" 
+                HorizontalOptions="Fill" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,8 @@ namespace Filters.Forms.Views
 		public UI_GeneralView (byte[] imageS)
 		{
 			InitializeComponent ();
-		}
+            ImageViewFilter.Source = ImageSource.FromStream(() => new MemoryStream(imageS));
+
+        }
 	}
 }

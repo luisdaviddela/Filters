@@ -29,8 +29,7 @@ namespace Filters.Forms
             }
             var file = await CrossMedia.Current.PickPhotoAsync(new Plugin.Media.Abstractions.PickMediaOptions
             {
-                PhotoSize = PhotoSize.Small,
-                CompressionQuality = 50
+                PhotoSize = PhotoSize.Full
             });
 
             if (file == null)
