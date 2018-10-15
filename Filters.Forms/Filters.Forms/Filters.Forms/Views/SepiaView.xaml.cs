@@ -12,7 +12,6 @@ namespace Filters.Forms
 	{
         Stream streaming = null;
         byte[] arry = null;
-        public static byte[] Foto;
         
         public SepiaView ()
 		{
@@ -43,8 +42,6 @@ namespace Filters.Forms
                 {
                     arry = GetImageStreamAsBytes(streaming);
                     byte[] fotingoo = DependencyService.Get<IFilterImage>().Sepia(arry);
-
-                    //await DisplayAlert("Converted","converted image","ok");
                     await Navigation.PushAsync(new UI_GeneralView(fotingoo));
                 }
                 catch (Exception ex)
@@ -66,7 +63,6 @@ namespace Filters.Forms
                     ms.Write(buffer, 0, read);
                 }
                 return ms.ToArray();
-
             }
         }
     }

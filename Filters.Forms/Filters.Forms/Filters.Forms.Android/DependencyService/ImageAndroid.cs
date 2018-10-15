@@ -11,10 +11,10 @@ using Android.Views;
 using Android.Widget;
 using Xamarin.Android;
 using Xamarin.Forms;
-using Filters.Forms.Droid;
-using Filters.Forms;
 using System.IO;
+using Filters.Forms.Droid;
 using Android.Graphics;
+using Filters.Forms;
 using Java.Nio;
 using Java.IO;
 
