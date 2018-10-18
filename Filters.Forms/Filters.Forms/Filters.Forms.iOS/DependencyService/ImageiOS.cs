@@ -56,12 +56,12 @@ namespace Filters.Forms.iOS
                 Image = ImageOriginal,
                 Intensity = 1.0f
             };
-            //---------Added
+            
             CIContext ctx = CIContext.FromOptions(null);
             var output = sepia.OutputImage;
             var cgImage = ctx.CreateCGImage(output, output.Extent);
             //---------
-            CGSize size = new CGSize(400, 400); //modify as necessary
+            CGSize size = new CGSize(400, 400); //Tamaño que se desplegará la imagen
             UIGraphics.BeginImageContext(size);
             CGRect rect = new CGRect(CGPoint.Empty, size);
             //UIImage.FromImage(flower).Draw(rect);
@@ -72,9 +72,9 @@ namespace Filters.Forms.iOS
             NSData jpegData = image.AsPNG();
             UIGraphics.EndImageContext();
 
-            byte[] bt = jpegData.ToArray();
+            byte[] iamgenEnSepia = jpegData.ToArray();
 
-            return bt;
+            return iamgenEnSepia;
         }
         void monovoid()
         {
