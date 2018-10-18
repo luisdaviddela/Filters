@@ -25,7 +25,6 @@ namespace Filters.Forms.Droid
     {
         public byte[] Sepia(byte[] image)
         {
-            
             Bitmap bmpOriginal = ByteToBitmap(image);
             int width, height, r, g, b, c, gry;
             height = bmpOriginal.Height;
